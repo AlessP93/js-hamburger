@@ -5,10 +5,23 @@
 
 
 // crea un evento che fa apparire .hamburger-menu quando viene cliccato l'id #open-menu
-// e poi un altro evento che fa scomparire .hamburger-menu quando viente cliccato l'id #close-menu
+
 const openMenu = document.getElementById("open-menu");
+const hamburgerMenu = document.getElementsById("h-menu");
 openMenu.addEventListener("click",
     function(){
-        const hamburgerMenu = document.getElementsById("h-menu") [0];
+       const hamburgerMenu = document.getElementById("h-menu");
+       hamburgerMenu.style.display = "block"
+    }
+);
+
+// e poi un altro evento che fa scomparire .hamburger-menu quando viente cliccato l'id #close-menu
+
+const closeMenu = document.getElementById("close-menu");
+const hamburgerMenu = document.getElementsById("h-menu");
+closeMenu.addEventListener("click",
+    function(){
+       const hamburgerMenu = document.getElementById("h-menu");
+       hamburgerMenu.style.display = "none"
     }
 );
