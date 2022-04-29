@@ -9,6 +9,6 @@
 const openMenu = document.getElementById("open-menu");
 openMenu.addEventListener("click",
     function(){
-        const hamburgerMenu = document.getElementsById("h-menu")
+        const hamburgerMenu = document.getElementsById("h-menu") [0];
     }
 );
